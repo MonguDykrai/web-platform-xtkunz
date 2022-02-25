@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  position: relative;
+  background: orange;
+}
+
+#comb {
+  float: left;
+}
+
+#form {
+  background: firebrick;
+}
+
+#form input {
+  width: 70%;
+}
+
+#holograph {
+  float: right;
+  position: relative; /* svg 需要设置 zIndex 否则线会被遮挡 */
+  width: 50vw;
+  height: 80vh;
+  background: #1f1f89;
+}
+
+.car {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+#car1 {
+  top: 100px;
+  left: 30px;
+  background: green;
+}
+
+#car2 {
+  top: 500px;
+  left: 80px;
+  background: yellow;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
